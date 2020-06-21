@@ -1,1 +1,1 @@
-web: gunicorn herolodjangotask:app
+web: gunicorn cryptic-headland-88738

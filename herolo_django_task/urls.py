@@ -18,10 +18,14 @@ from django.urls import path, include
 from rest_framework import routers
 from message.views import PersonViewSet
 
+from django.views.generic import RedirectView
+from django.conf.urls import url
+
 router = routers.DefaultRouter()
 router.register('persons', PersonViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include(router.urls))
+    path('', include(router.urls)),
+    url(r'^favicon\.ico$', RedirectView.as_view(url='/static/images/favicon.ico'))
 ]

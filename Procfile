@@ -1,1 +1,1 @@
-web: gunicorn herolo_django_task
+web: gunicorn herolo-task

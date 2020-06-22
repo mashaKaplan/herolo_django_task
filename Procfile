@@ -1,1 +1,1 @@
-web: gunicorn cryptic-headland-88738
+web: gunicorn herolo_django_task

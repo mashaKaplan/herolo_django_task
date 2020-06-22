@@ -1,1 +1,1 @@
-web: gunicorn herolo_django_task.wsgi --log-file
+web:gunicorn herolo_django_task.wsgi --log-file

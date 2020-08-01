@@ -30,6 +30,7 @@ DEBUG = config('DEBUG', default=False, cast=bool)
 
 ALLOWED_HOSTS = ['herolo-django-task.herokuapp.com',]
 
+WEB_CONCURRENCY = 3
 
 # Application definition
 
